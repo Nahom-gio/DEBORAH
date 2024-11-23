@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    background: #020202;
+    cursor: crosshair;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 5vw; /* Responsive font size */
+    font-weight: 900;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+p {
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 3vw; /* Responsive font size */
+    font-weight: 900;
+    text-align: center; /* Center text */
+    padding: 0 10%; /* Add padding for smaller screens */
+}
+
+/* Media Queries for additional responsiveness */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 12vw; /* Adjust font size for small screens */
+    }
+    
+    p {
+        font-size: 3vw; /* Adjust font size for small screens */
+    }
+}
